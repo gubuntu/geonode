@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+ADD 71-apt-cacher-ng /etc/apt/apt.conf.d/71-apt-cacher-ng
+
 RUN \
   apt-get update && \
   apt-get install -y build-essential && \
